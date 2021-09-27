@@ -51,7 +51,7 @@ feature set would include the n most frequent 4-character ngrams from the entire
 
 <h3><b>Dataset</b></h3>
 The dataset is provided by PAN for the PAN 2020 Authorship verification contest (PAN, 2021). 
-PAN provided the data in two different sizes, large and small. All data provided by PAN was 
+PAN provided the data in two different sizes, a large and small version where the latter was used in this project. All data provided by PAN was 
 collected from the website FanFiction.net. This website enables their users to submit and share 
 their own fictional works. The dataset consists of several tens of thousands of entries holding 
 containing the two texts both containing  roughly 21,000 characters. Each such entity also 
