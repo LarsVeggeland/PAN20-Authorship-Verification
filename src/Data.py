@@ -176,7 +176,8 @@ def get_training_data(shared_words : int = 0,
                     funcwords : bool = False,
                     largest_word_count : bool = False,
                     cleaning : bool=True,
-                    cutoff : int = None):
+                    cutoff : int = None,
+                    PATH : str):
 
     if (bool(shared_words) + bool(ordered_words) + bool(n_grams) > 1):
         print("ERROR! More than one dimension specified")
@@ -190,8 +191,8 @@ def get_training_data(shared_words : int = 0,
     print(f"\n{datetime.datetime.now()}: Collecting data...\n")
 
     #Two lists contaning text pairs and whether both texts weree written by the same author
-    text_pairs = get_text_pairs(cleaning, "D://Data//PAN 2020 Data//pan20-authorship-verification-training-small//pan20-authorship-verification-training-small.jsonl", cutoff)
-    truths = get_truth("D://Data//PAN 2020 Data//pan20-authorship-verification-training-small//pan20-authorship-verification-training-small-truth.jsonl")
+    text_pairs = get_text_pairs(cleaning, PATH, cutoff)
+    truths = get_truth(PATH)
     
     print(f"{datetime.datetime.now()}: Data collected, extracting vector space...\n")
 
