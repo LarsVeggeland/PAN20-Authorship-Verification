@@ -57,4 +57,4 @@ their own fictional works. The dataset consists of several tens of thousands of 
 containing the two texts both containing  roughly 21,000 characters. Each such entity also 
 containing a unique id for the author(s) of the two texts. In addition, as all texts are works of 
 fiction, the appropriate fandom is provided for both texts. The dataset will not be found in this repository,
-but it may be obtained through requesting access at 
+but it may be obtained through requesting access at https://zenodo.org/record/3724096
